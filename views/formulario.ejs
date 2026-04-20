@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+
+<body>
+    <div class="container mt-5">    
+        <div class="row justify-content-center">    
+            <div class="col-md-5">
+                <form id="formulario" class=" card p-4 shadow-lg"> 
+                    <h3 class="text-center mb-4"> Registro de Usuarios</h3>
+                    <div class="mb-3">
+                        <label class = "form-label">Nombre</label>
+                        <input type="text" id="nombre" class="form-control">
+                        <div id="errorNombre" class="invalid-feedback"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label class = "form-label">Email</label>
+                        <input type="email" id="correo" class="form-control">
+                        <div id="errorCorreo" class="invalid-feedback"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label class = "form-label">Contraseña</label>
+                        <input type="password" id="contrasena" class="form-control">
+                        <div id="errorContrasena" class="invalid-feedback"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Registrar</button>
+                </form>
+                <div class="mt-4">
+                    <h4 class="text-center"> Lista de Alumnos </h4>
+                    <div id="resultado" class="list-group">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/js/formulario.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
